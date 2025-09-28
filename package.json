@@ -1,0 +1,26 @@
+{
+  "name": "atomicmarket-cleaner",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "npx tsx --env-file=.env src/app.ts",
+    "prettier": "prettier -w ."
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@wharfkit/atomicassets": "^1.2.3",
+    "@wharfkit/session": "^1.7.0",
+    "@wharfkit/wallet-plugin-privatekey": "^1.1.0",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.6",
+    "typescript": "~5.9"
+  }
+}
