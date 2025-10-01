@@ -8,9 +8,9 @@ const envSchema = z.object({
   ACTOR: z.string(),
   PERMISSION: z.string(),
   CHAIN_ID: z.hash('sha256'),
-  CHAIN_URL: z.httpUrl(),
+  CHAIN_URL: z.string(),
   PRIVATE_KEY: z.string(),
-  ATOMIC_URL: z.httpUrl(),
+  ATOMIC_URL: z.string(),
 });
 const env = envSchema.parse(process.env);
 
